@@ -1,3 +1,5 @@
+# wenn der Taster auf Pin 18 betaetigt wird,
+# Blinkt die LED kurz auf
 import RPi.GPIO as GPIO
 import time
 
