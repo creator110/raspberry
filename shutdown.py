@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+import os
 
 # Pin-Nummer wie auf dem Raspberry verwenden
 GPIO.setmode(GPIO.BOARD)
@@ -11,12 +12,7 @@ GPIO.setup(7, GPIO.OUT)
 
 # ISR
 def Interrupt(channel):
-	# LED an
-	GPIO.output(7, GPIO.HIGH)
-	# 0,1 Sekunde warten
-	time.sleep(0.1)
-	# LED aus
-      	GPIO.output(7, GPIO.LOW)
+	os.system("sudo shutdown -h now")
 		
 # Interrupt Event hinzufuegen. Pin 18, auf steigende Flanke reagieren und ISR "Interrupt" deklarieren
 GPIO.add_event_detect(18, GPIO.RISING, callback = Interrupt, bouncetime = 200)
