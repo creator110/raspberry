@@ -1,3 +1,8 @@
+# wenn der Taster betaetigt wird, 
+# dann wird der Befehl "sudo shutdown -h now"
+# ausgefuehrt
+# das raspberry wird heruntergefahren 
+# und startet nicht neu
 import RPi.GPIO as GPIO
 import time
 import os
