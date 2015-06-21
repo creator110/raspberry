@@ -11,12 +11,12 @@ GPIO.setup(7, GPIO.OUT)
 
 # ISR
 def Interrupt(channel):
-		# LED an
-      GPIO.output(7, GPIO.HIGH)
-      # 0,1 Sekunde warten
-		time.sleep(0.1)
-		# LED aus
-      GPIO.output(7, GPIO.LOW)
+	# LED an
+	GPIO.output(7, GPIO.HIGH)
+	# 0,1 Sekunde warten
+	time.sleep(0.1)
+	# LED aus
+      	GPIO.output(7, GPIO.LOW)
 		
 # Interrupt Event hinzufuegen. Pin 18, auf steigende Flanke reagieren und ISR "Interrupt" deklarieren
 GPIO.add_event_detect(18, GPIO.RISING, callback = Interrupt, bouncetime = 200)
