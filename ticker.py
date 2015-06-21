@@ -1,3 +1,7 @@
+# wenn der Taster auf Pin betaetigt wird, 
+# dann wird die Variable "Counter" um 1 erhoet
+# und es wird der Text: Counter + (die aktuelle Zahl)
+# ausgegeben
 import RPi.GPIO as GPIO
 import time
 
