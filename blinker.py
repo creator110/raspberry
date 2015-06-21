@@ -22,6 +22,6 @@ while True:
         time.sleep(0.2)
         # LED-gruen an, LED-rot aus
         GPIO.output(40, GPIO.HIGH)
-		GPIO.output(7, GPIO.LOW)
-		# 0,2 Sekunden warten
-		time.sleep(0.2)
+	GPIO.output(7, GPIO.LOW)
+	# 0,2 Sekunden warten
+	time.sleep(0.2)
